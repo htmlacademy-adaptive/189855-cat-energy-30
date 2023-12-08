@@ -9,9 +9,9 @@
   <body class="page__body">
     <header class="header">
       <div class="header__wrap">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип" class="logo">
-        <img src="images/logo-2-mobile.svg" width="101" height="18" alt="Тект логотипа" class="logo-text">
-        <button class="button-menu">Меню</button>
+        <img class="logo" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
+        <img class="logo-text" src="images/logo-2-mobile.svg" width="101" height="18" alt="Тект логотипа">
+        <button class="button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
 
       <nav class="header__nav">
@@ -20,10 +20,10 @@
             <a href="/">Главная</a>
           </li>
           <li class="header__nav-item">
-            <a href="catalog.html">Каталог продукции</a>
+            <a href="#">Каталог продукции</a>
           </li>
           <li class="header__nav-item">
-            <a>Подбор программы</a>
+            <a href="form.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -71,7 +71,7 @@
               <label for="email">E-mail:*</label>
               <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
 
-              <label for="email">Телефон:*</label>
+              <label for="phone">Телефон:*</label>
               <input type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
             </div>
           </div>
@@ -95,17 +95,17 @@
               <label for="additionally-2">питьевая вода</label>
 
               <input type="checkbox" name="additionally" id="additionally-3" value="milk">
-              <label for="additionally-2">молоко</label>
+              <label for="additionally-3">молоко</label>
 
               <input type="checkbox" name="additionally" id="additionally-4" value="vitamins">
-              <label for="additionally-2">Витамины</label>
+              <label for="additionally-4">Витамины</label>
             </div>
           </div>
 
           <div class="form__button">
             <div class="form__button-wrap">
               <button type="submit">отправить заявку</button>
-              <span class="button__label">* — Обязательные поля</span>
+              <span class="form__button-label">* — Обязательные поля</span>
             </div>
           </div>
         </form>
@@ -129,7 +129,7 @@
           <div class="contacts__map">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2f457cce80848977f81ce65d094efa2c9c2c7a92b016a7b8d9b026577a159764&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
 
-            <img src="images/map/map.png" alt="Карта">
+            <img src="images/map/map.png" width="320" height="362" alt="Карта">
           </div>
         </div>
       </section>
@@ -142,24 +142,23 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <img src="images/social/youtube.svg" alt="Иконка Ютюб">
+              <img src="images/social/youtube.svg" width="28" height="22" alt="Иконка Ютюб">
             </li>
             <li class="social__item">
-              <img src="images/social/vk.svg" alt="Иконка Вконтакте">
+              <img src="images/social/vk.svg" width="28" height="22" alt="Иконка Вконтакте">
             </li>
             <li class="social__item">
-              <img src="images/social/telegram.svg" alt="Иконка телеграм">
+              <img src="images/social/telegram.svg" width="28" height="22" alt="Иконка телеграм">
             </li>
           </ul>
         </div>
 
-        <div class="footer__brend">
-          <img src="images/logo-academy-text.svg" alt="html академия">
-          <img src="images/logo-academy.svg" alt="Логотип html академии">
+        <div class="page-footer__brend">
+          <img src="images/logo-academy-text.svg" width="113" height="20" alt="html академия">
+          <img src="images/logo-academy.svg" width="27" height="24" alt="Логотип html академии">
         </div>
       </div>
     </footer>
-
     <script src="scripts/index.js" defer></script>
   </body>
 </html>
