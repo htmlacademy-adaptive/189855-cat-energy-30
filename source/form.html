@@ -2,6 +2,10 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico"><link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/32.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <title>Форма</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
@@ -9,8 +13,17 @@
   <body class="page__body">
     <header class="header">
       <div class="header__wrap">
-        <img class="logo" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
-        <img class="logo-text" src="images/logo-2-mobile.svg" width="101" height="18" alt="Тект логотипа">
+        <a href="/">
+          <picture>
+            <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+            <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+            <img class="logo" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
+          </picture>
+        </a>
+
+        <a href="/">
+          <img class="logo-text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа">
+        </a>
         <button class="button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
       </div>
 
@@ -20,10 +33,10 @@
             <a href="/">Главная</a>
           </li>
           <li class="header__nav-item">
-            <a href="#">Каталог продукции</a>
+            <a href="catalog.html">Каталог продукции</a>
           </li>
           <li class="header__nav-item">
-            <a href="form.html">Подбор программы</a>
+            <a href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -129,7 +142,11 @@
           <div class="contacts__map">
             <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A2f457cce80848977f81ce65d094efa2c9c2c7a92b016a7b8d9b026577a159764&amp;source=constructor" width="100%" height="362" frameborder="0"></iframe>
 
-            <img src="images/map/map.png" width="320" height="362" alt="Карта">
+            <picture>
+              <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+              <source width="758" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+              <img src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта">
+            </picture>
           </div>
         </div>
       </section>
@@ -137,7 +154,9 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrap">
-        <img src="images/logo-2-mobile.svg" width="128" height="24" alt="Логотип в футере">
+        <a href="/">
+          <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Логотип в футере">
+        </a>
 
         <div class="social">
           <ul class="social__list">
@@ -153,10 +172,10 @@
           </ul>
         </div>
 
-        <div class="page-footer__brend">
+        <a class="page-footer__brend" href="#">
           <img src="images/logo-academy-text.svg" width="113" height="20" alt="html академия">
           <img src="images/logo-academy.svg" width="27" height="24" alt="Логотип html академии">
-        </div>
+        </a>
       </div>
     </footer>
     <script src="scripts/index.js" defer></script>
