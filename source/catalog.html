@@ -8,6 +8,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <title>Каталог товаров</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
 
@@ -45,7 +46,7 @@
 
     <main>
       <section class="catalog">
-        <h1>Каталог продукции</h1>
+        <h1 class="catalog__title h1">Каталог продукции</h1>
 
         <ul class="catalog__list">
           <li class="catalog__item">
@@ -61,7 +62,7 @@
               <div class="catalog__info">
                 <div class="catalog__item-title">
                   <a class="catalog__link" href="#">
-                    <h3>Cat Energy PRO 500 г</h3>
+                    <h3 class="catalog__link-title">Cat Energy PRO 500 г</h3>
                   </a>
                 </div>
                 <table class="catalog__tech-info">
@@ -96,7 +97,7 @@
               <div class="catalog__info">
                 <div class="catalog__item-title">
                   <a class="catalog__link" href="#">
-                    <h3>Cat Energy PRO 1000 г</h3>
+                    <h3 class="catalog__link-title">Cat Energy PRO 1000 г</h3>
                   </a>
                 </div>
                 <table class="catalog__tech-info">
@@ -131,7 +132,7 @@
               <div class="catalog__info">
                 <div class="catalog__item-title">
                   <a class="catalog__link" href="#">
-                    <h3>Cat Energy PRO 500 г</h3>
+                    <h3 class="catalog__link-title">Cat Energy PRO 500 г</h3>
                   </a>
                 </div>
                 <table class="catalog__tech-info">
@@ -166,7 +167,7 @@
               <div class="catalog__info">
                 <div class="catalog__item-title">
                   <a class="catalog__link" href="#">
-                    <h3>Cat Energy PRO 1000 г</h3>
+                    <h3 class="catalog__link-title">Cat Energy PRO 1000 г</h3>
                   </a>
                 </div>
                 <table class="catalog__tech-info">
@@ -201,7 +202,7 @@
               <div class="catalog__info">
                 <div class="catalog__item-title">
                   <a class="catalog__link" href="#">
-                    <h3>Cat Energy PRO 500 г</h3>
+                    <h3 class="catalog__link-title">Cat Energy PRO 500 г</h3>
                   </a>
                 </div>
                 <table class="catalog__tech-info">
@@ -236,7 +237,7 @@
               <div class="catalog__info">
                 <div class="catalog__item-title">
                   <a class="catalog__link" href="#">
-                    <h3>Cat Energy PRO 1000 г</h3>
+                    <h3 class="catalog__link-title">Cat Energy PRO 1000 г</h3>
                   </a>
                 </div>
                 <table class="catalog__tech-info">
@@ -271,7 +272,7 @@
               <div class="catalog__info">
                 <div class="catalog__item-title">
                   <a class="catalog__link" href="#">
-                    <h3>Cat Energy PRO 500 г</h3>
+                    <h3 class="catalog__link-title">Cat Energy PRO 500 г</h3>
                   </a>
                 </div>
                 <table class="catalog__tech-info">
@@ -296,7 +297,7 @@
           <li class="catalog__item catalog__item-all">
             <div class="catalog__item-wrap catalog__item-wrap-all">
               <a class="catalog__link" href="#">
-                <h3 class="catalog__all">Показать еще 100500 товаров</h3>
+                <h3 class="catalog__link-title catalog__all">Показать еще 100500 товаров</h3>
               </a>
               <p class="catalog__text-all">На самом деле вкусов гораздо больше!</p>
               <a class="catalog__button catalog__button--all button" href="#">показать все</a>
@@ -307,47 +308,47 @@
 
       <section class="additional-products">
         <div class="additional-products__wrap">
-          <h2 class="h2">Дополнительные товары</h2>
+          <h2 class="additional-products__title">Дополнительные товары</h2>
 
           <ul class="additional-products__list">
             <li class="additional-products__item">
-              <h3>Сахарозаменитель</h3>
+              <h3 class="additional-products__item-title">Сахарозаменитель</h3>
               <div class="additional-products__table">
                 <span>1 упаковка (100 г)</span>
                 <span>200 ₽</span>
               </div>
 
-              <button type="button">заказать</button>
+              <a class="additional-products__button button" href="#">Заказать</a>
             </li>
 
             <li class="additional-products__item">
-              <h3>питьевая вода</h3>
+              <h3 class="additional-products__item-title">питьевая вода</h3>
               <div class="additional-products__table">
                 <span>5 литров</span>
                 <span>50 ₽</span>
               </div>
 
-              <button type="button">заказать</button>
+              <a class="additional-products__button button" href="#">Заказать</a>
             </li>
 
             <li class="additional-products__item">
-              <h3>молоко</h3>
+              <h3 class="additional-products__item-title">молоко</h3>
               <div class="additional-products__table">
                 <span>1 литр</span>
                 <span>100 ₽</span>
               </div>
 
-              <button type="button">заказать</button>
+              <a class="additional-products__button button" href="#">Заказать</a>
             </li>
 
             <li class="additional-products__item">
-              <h3>витамины</h3>
+              <h3 class="additional-products__item-title">витамины</h3>
               <div class="additional-products__table">
                 <span>1 упаковка (30 г)</span>
                 <span>300 ₽</span>
               </div>
 
-              <button type="button">заказать</button>
+              <a class="additional-products__button button" href="#">Заказать</a>
             </li>
           </ul>
         </div>
@@ -355,9 +356,11 @@
 
       <section class="promo">
         <div class="promo__wrap">
-          <h1 class="visually-hidden">Наши акции</h1>
-          <div class="promo__block">
-            Закажите все и получите чехол для кота в подарок!
+          <div class="promo__container">
+            <h1 class="visually-hidden">Наши акции</h1>
+            <div class="promo__block">
+              Закажите все и получите чехол для кота в подарок!
+            </div>
           </div>
         </div>
       </section>

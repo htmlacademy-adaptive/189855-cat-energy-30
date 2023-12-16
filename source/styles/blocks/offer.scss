@@ -1,0 +1,20 @@
+.offer__item {
+  background-color: $basic-grey;
+}
+
+.offer__title {
+  color: $basic-black;
+  font-family: $font-first;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.offer__link {
+  color: $basic-black;
+  font-family: $font-first;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

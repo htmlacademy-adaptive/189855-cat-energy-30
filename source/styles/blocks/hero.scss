@@ -1,0 +1,14 @@
+.hero__container {
+  background-color: $accent-color;
+}
+
+.hero__title,
+.hero__description {
+  color: $basic-white;
+}
+
+.hero__description {
+  text-transform: uppercase;
+  line-height: 14px;
+  font-family: $font-first;
+}
