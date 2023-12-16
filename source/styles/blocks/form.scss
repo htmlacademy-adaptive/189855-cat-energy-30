@@ -1,0 +1,36 @@
+.form {
+  label,
+  input,
+  &::placeholder {
+    font-family: $font-first;
+    text-transform: uppercase;
+  }
+
+  input::placeholder {
+    color: $basic-text-color;
+  }
+}
+
+.form__title {
+  color: $basic-black;
+}
+
+.form__description {
+  font-family: $font-first;
+  color: $basic-black;
+  text-transform: uppercase;
+}
+
+.form__contacts-title,
+.form__comment-title,
+.form__additionally-title {
+  font-family: $font-first;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+  font-weight: 400;
+}
+
+.form__button {
+  border: none;
+}

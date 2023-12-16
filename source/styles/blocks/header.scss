@@ -1,1 +1,10 @@
-
+.header__nav-item {
+  a {
+    color: $basic-black;
+    text-transform: uppercase;
+    font-family: $font-first;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+  }
+}

@@ -8,6 +8,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <title>Форма</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
@@ -47,7 +48,7 @@
         <form class="form" action="#" method="post">
           <div class="form__about-client">
             <div class="form__about-client-wrap">
-              <h1>Подбор программы</h1>
+              <h1 class="form__title h1">Подбор программы</h1>
 
               <p class="form__description">
                 Заполните анкету, и мы подберем программу питания для вашего кота
@@ -79,7 +80,7 @@
 
           <div class="form__contacts-data">
             <div class="form__contacts-data-wrap">
-              <h2>Контактные данные (владельца кота)</h2>
+              <h2 class="form__contacts-title">Контактные данные (владельца кота)</h2>
 
               <label for="email">E-mail:*</label>
               <input type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
@@ -91,7 +92,7 @@
 
           <div class="form__comment">
             <div class="form__comment-wrap">
-              <h2>Комментарий</h2>
+              <h2 class="form__comment-title">Комментарий</h2>
 
               <textarea name="comment" id="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
             </div>
@@ -99,7 +100,7 @@
 
           <div class="form__additionally">
             <div class="form__additionally-wrap">
-              <h2>Дополнительно</h2>
+              <h2 class="form__additionally-title">Дополнительно</h2>
 
               <input type="checkbox" name="additionally" id="additionally-1" value="sweetener" checked>
               <label for="additionally-1">сахарозаменитель</label>
@@ -117,7 +118,7 @@
 
           <div class="form__button">
             <div class="form__button-wrap">
-              <button type="submit">отправить заявку</button>
+              <button class="form__button button" type="submit">отправить заявку</button>
               <span class="form__button-label">* — Обязательные поля</span>
             </div>
           </div>

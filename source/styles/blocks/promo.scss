@@ -1,0 +1,19 @@
+.promo__wrap {
+  background-image: url("../../images/promo-mobile@1x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.promo__container {
+  background-color: rgba(104, 183, 56, 0.85);
+  min-height: 290px;
+}
+
+.promo__block {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  min-height: 290px;
+}
