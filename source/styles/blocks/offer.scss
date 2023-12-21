@@ -1,5 +1,5 @@
 .offer__item {
-  background-color: $basic-grey;
+  background-color: $basic-gray;
 }
 
 .offer__title {
@@ -10,11 +10,51 @@
   text-transform: uppercase;
 }
 
+.offer__title--cat-slim {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 50px;
+    top: 0;
+    left: 0;
+    background-image: url("../../images/icons/cat-slim.svg");
+  }
+}
+
+.offer__title--cat-pro {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    top: 0;
+    left: 0;
+    background-image: url("../../images/icons/cat-pro.svg");
+  }
+}
+
 .offer__link {
+  position: relative;
   color: $basic-black;
   font-family: $font-first;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 12px;
+    top: 3px;
+    right: -39px;
+    mask-image: url("../../images/icons/stack.svg#arrow");
+    background-color: $basic-black;
+  }
 }
