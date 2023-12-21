@@ -34,3 +34,44 @@
 .form__button {
   border: none;
 }
+
+.form__email,
+.form__phone {
+  padding: 14px 15px 13px;
+  border: 1px solid $light-gray;
+}
+
+.form__email {
+  min-width: 217px;
+}
+
+.form__phone {
+  min-width: 200px;
+}
+
+.form__email-wrap,
+.form__phone-wrap {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background-color: $basic-black;
+  }
+}
+
+.form__email-wrap {
+  &::after {
+    mask-image: url("../../images/icons/stack.svg#email");
+  }
+}
+
+.form__phone-wrap {
+  &::after {
+    mask-image: url("../../images/icons/stack.svg#phone");
+  }
+}
