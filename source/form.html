@@ -8,39 +8,40 @@
     <link rel="manifest" href="manifest.webmanifest">
     <title>Форма</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="vendor/normalize.css">
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body class="page__body">
-    <header class="header">
-      <div class="header__wrap">
-        <a href="/">
-          <picture>
-            <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-            <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-            <img class="logo" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
-          </picture>
-        </a>
+    <header class="header header--inner-page">
+      <div class="header__container">
+        <div class="header__wrap">
+          <a class="logo" href="/">
+            <picture>
+              <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип">
+            </picture>
+          </a>
 
-        <a href="/">
-          <img class="logo-text" src="images/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа">
-        </a>
-        <button class="button-menu" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <a class="logo-text" href="/">
+            <img src="images/logo-text-mobile.svg" width="101" height="18" alt="Текст логотипа">
+          </a>
+          <button class="header__toggle header__toggle--open" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        </div>
+
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item header__nav-item--inner-page header__nav-item--active">
+              <a href="/">Главная</a>
+            </li>
+            <li class="header__nav-item header__nav-item--inner-page">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="header__nav-item header__nav-item--inner-page">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-
-      <nav class="header__nav">
-        <ul class="header__nav-list">
-          <li class="header__nav-item">
-            <a href="/">Главная</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="header__nav-item">
-            <a href="#">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main>
@@ -155,8 +156,8 @@
       </section>
     </main>
 
-    <footer class="page-footer">
-      <div class="page-footer__wrap">
+    <footer class="footer">
+      <div class="footer__wrap">
         <a href="/">
           <img src="images/logo-text-mobile.svg" width="128" height="24" alt="Логотип в футере">
         </a>
@@ -175,7 +176,7 @@
           </ul>
         </div>
 
-        <a class="page-footer__brend" href="#">
+        <a class="footer__brend" href="#">
           <img src="images/logo-academy-text.svg" width="113" height="20" alt="html академия">
           <img src="images/logo-academy.svg" width="27" height="24" alt="Логотип html академии">
         </a>

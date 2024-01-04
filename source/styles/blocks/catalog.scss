@@ -1,5 +1,11 @@
+.catalog {
+  padding-top: 27px;
+}
+
 .catalog__title {
+  @include wrapper-mobile();
   color: $basic-black;
+  margin-bottom: 41px;
 }
 
 .catalog__link {
@@ -13,4 +19,137 @@
   line-height: 20px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.catalog__item {
+  padding-top: 20px;
+  border-top: 1px solid $border-item-catalog;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.catalog__item-wrap {
+  @include wrapper-mobile();
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content auto;
+  row-gap: 20px;
+}
+
+.catalog__item-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__button {
+  grid-column: 1 / -1;
+}
+
+.catalog__item-title {
+  width: 76px;
+  margin-bottom: 14px;
+}
+
+.catalog__tech-info {
+  width: 100%;
+
+  td:nth-child(2) {
+    text-align: right;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 65px;
+  }
+
+  .catalog__list {
+    @include wrapper-tablet();
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 141px;
+  }
+
+  .catalog__title {
+    @include wrapper-tablet();
+    margin-bottom: 165px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .catalog__link-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .catalog__item {
+    position: relative;
+    border-top: none;
+    padding-top: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .catalog__item-link {
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .catalog__item-wrap {
+    margin: 0;
+    width: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto;
+    row-gap: 0;
+    padding: 161px 37px 40px 37px;
+    background-color: $basic-gray;
+  }
+
+  .catalog__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .catalog__item-title {
+    width: 135px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .catalog__tech-info {
+    margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 20px;
+    border-collapse: collapse;
+
+    tr {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $light-gray;
+
+      &:not(:last-child) {
+        margin-bottom: 7px;
+      }
+    }
+
+    td {
+      padding-bottom: 5px;
+    }
+  }
+
+  .catalog__button {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

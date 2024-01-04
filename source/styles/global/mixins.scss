@@ -7,3 +7,35 @@
     src: $font-src;
   }
 }
+
+@mixin wrapper-mobile() {
+  min-width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-tablet() {
+  min-width: 768px;
+  max-width: 1260px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-tablet-hero() {
+  min-width: 768px;
+  max-width: 1260px;
+  padding: 0 120px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-desktop-hero() {
+  max-width: 1440px;
+  padding: 0 190px;
+  margin: 0 auto;
+}
+
+@mixin wrapper-desktop() {
+  max-width: 1440px;
+  padding: 0 110px;
+  margin: 0 auto;
+}
