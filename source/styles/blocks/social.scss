@@ -17,6 +17,18 @@
   padding-bottom: 20px;
 }
 
+.social__item {
+  a:hover {
+    path {
+      fill: $accent-color;
+    }
+  }
+
+  a:active {
+    opacity: 0.3;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .social {
     border-top: none;

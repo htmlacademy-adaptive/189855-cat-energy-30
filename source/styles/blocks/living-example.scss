@@ -99,6 +99,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   cursor: pointer;
+
+  &:hover {
+    svg {
+      path {
+        fill: $accent-color;
+      }
+
+      rect {
+        stroke: $accent-color;
+      }
+    }
+  }
 }
 
 .living-example__cat-fat {
