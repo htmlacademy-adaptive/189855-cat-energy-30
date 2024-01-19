@@ -1,18 +1,99 @@
 .promo__wrap {
   background-image: url("../../images/promo-mobile@1x.png");
-  background-size: cover;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .promo__container {
+  position: relative;
   background-color: rgba(104, 183, 56, 0.85);
   min-height: 290px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 78px;
+    height: 80px;
+    background-image: url("../../images/icons/stack.svg#icon_gift");
+  }
 }
 
 .promo__block {
+  position: relative;
+  top: 187px;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
-  min-height: 290px;
 }
+
+@media (min-width: $tablet-width) {
+  .promo__wrap {
+    position: relative;
+    background-image: url("../../images/promo-tablet@1x.png");
+  }
+
+  .promo__container {
+    min-height: 200px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 77px;
+      transform: translate(0, -50%);
+      width: 78px;
+      height: 80px;
+      background-image: url("../../images/icons/stack.svg#icon_gift");
+    }
+  }
+
+  .promo__block {
+    position: absolute;
+    right: 125px;
+    top: 71px;
+    width: 161px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo__wrap {
+    padding: 0;
+    margin: 0;
+    min-width: none;
+
+    position: relative;
+    background-image: url("../../images/promo-desktop@1x.png");
+    background-size: 245px 288px;
+    background-position: 0 0;
+    margin-bottom: 0;
+  }
+
+  .promo__container {
+    min-height: 288px;
+    width: 245px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 56px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 78px;
+      height: 80px;
+      background-image: url("../../images/icons/stack.svg#icon_gift");
+    }
+  }
+
+  .promo__block {
+    right: 42px;
+    top: 185px;
+    text-align: center;
+  }
+}
+

@@ -44,6 +44,10 @@
   }
 }
 
+.contacts--inner-page {
+  background-color: $basic-gray;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     position: relative;
@@ -68,6 +72,9 @@
   }
 
   .contacts__address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 157px;
 
     span {
@@ -83,6 +90,11 @@
     iframe {
       height: 400px;
     }
+  }
+
+  .contacts__street,
+  .contacts__city {
+    text-align: right;
   }
 }
 
@@ -111,6 +123,11 @@
     iframe {
       height: 400px;
     }
+  }
+
+  .contacts__street,
+  .contacts__city {
+    text-align: left;
   }
 }
 
