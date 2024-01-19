@@ -1,0 +1,1 @@
+var e=document.querySelector(".header__toggle"),t=document.querySelector(".header__nav");t.classList.add("header__nav--none");e.addEventListener("click",function(a){a.preventDefault(),e.classList.toggle("header__toggle--close"),t.classList.toggle("header__nav--none")});
