@@ -16,7 +16,7 @@
     transform: translateX(-50%);
     width: 280px;
     height: 270px;
-    background-image: url("../../images/main-image-mobile@1x.png");
+    background-image: image-set(url("../../images/main-image-mobile@1x.webp") type("image/webp") 1x, url("../../images/main-image-mobile@2x.webp") type("image/webp") 2x, url("../../images/main-image-mobile@1x.png") type("image/png") 1x, url("../../images/main-image-mobile@2x.png") type("image/png") 2x);
     z-index: 2;
   }
 }
@@ -25,7 +25,7 @@
   position: relative;
   padding-top: 27px;
   min-height: 302px;
-  background-image: url("../../images/cat-background-mobile@1x.png");
+  background-image: image-set(url("../../images/cat-background-mobile@1x.webp") type("image/webp") 1x, url("../../images/cat-background-mobile@2x.webp") type("image/webp") 2x, url("../../images/cat-background-mobile@1x.png") type("image/png") 1x, url("../../images/cat-background-mobile@2x.png") type("image/png") 2x);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -153,7 +153,7 @@
     @include wrapper-desktop-hero();
 
     &::before {
-      top: -90px;
+      top: -83px;
       left: 65.5%;
       transform: translateX(-70%);
       width: 552px;

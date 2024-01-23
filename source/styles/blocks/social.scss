@@ -18,14 +18,20 @@
 }
 
 .social__item {
+  path {
+    transition: all 0.5s ease;
+  }
+
   a:hover {
     path {
       fill: $accent-color;
+      transition: all 0.5s ease;
     }
   }
 
   a:active {
     opacity: 0.3;
+    transition: all 0s;
   }
 }
 

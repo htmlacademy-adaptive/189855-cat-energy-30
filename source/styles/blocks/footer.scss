@@ -16,12 +16,13 @@
   margin-bottom: 20px;
 
   img {
-    transition: opacity 0.6s ease;
+    transition: opacity 0.5s ease;
   }
 
   &:hover {
     img {
       opacity: 0.8;
+      transition: opacity 0.6s ease;
     }
   }
 
@@ -29,7 +30,7 @@
   &:focus {
     img {
       opacity: 0.6;
-      transition: all 0;
+      transition: all 0s;
     }
   }
 }
@@ -40,10 +41,17 @@
   align-items: center;
   width: 100%;
 
+  .footer__brend-logo {
+    path {
+      transition: all 0.5s ease;
+    }
+  }
+
   &:hover {
-    .footer__brend-text {
+    .footer__brend-logo {
       path {
         fill: $accent-color;
+        transition: all 0.5s ease;
       }
     }
   }
@@ -55,7 +63,7 @@
 
 @media (min-width: $tablet-width) {
   .footer {
-    padding-top: 55px;
+    padding-top: 60px;
     padding-bottom: 55px;
   }
 
@@ -71,13 +79,13 @@
   }
 
   .footer__brend {
-    width: 168px;
+    width: 161px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .footer {
-    padding-top: 66px;
+    padding-top: 68px;
     padding-bottom: 66px;
   }
 

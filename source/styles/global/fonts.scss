@@ -1,2 +1,2 @@
-@include font-template("Lato", 400, normal, url("../../fonts/Lato-Regular.woff2") format("woff2"));
-@include font-template("Oswald", 400, normal, url("../../fonts/oswaldregular.woff2") format("woff2"));
+@include font-template("Lato", 400, normal, url("../../fonts/Lato-Regular.woff2") format("woff2"), url("../../fonts/Lato-Regular.woff") format("woff"));
+@include font-template("Oswald", 400, normal, url("../../fonts/oswaldregular.woff2") format("woff2"), url("../../fonts/oswaldregular.woff") format("woff"));

@@ -11,7 +11,7 @@
 .offer__item {
   position: relative;
   background-color: $basic-gray;
-  padding: 30px 20px 18px 20px;
+  padding: 30px 20px 17px 20px;
 
   &::after {
     content: "";
@@ -65,8 +65,8 @@
 }
 
 .offer__description {
-  padding-bottom: 23px;
-  margin-bottom: 15px;
+  padding-bottom: 21px;
+  margin-bottom: 21px;
   border-bottom: 1px solid $border-offer-color;
 }
 
@@ -105,7 +105,7 @@
   img {
     position: relative;
     left: -8px;
-    transition: all 0.6s ease;
+    transition: all 0.5s ease;
   }
 }
 
@@ -119,7 +119,7 @@
   }
 
   .offer__item {
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 57px 52px;
 
     &::after {
       top: 92px;
@@ -159,7 +159,7 @@
 
   .offer__description {
     padding-bottom: 0;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
     border-bottom: none;
     font-size: 16px;
     line-height: 24px;
@@ -184,7 +184,7 @@
 
   .offer__item {
     width: 570px;
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 58px 52px;
 
     &::after {
       top: 47px;
@@ -218,6 +218,6 @@
   }
 
   .offer__description {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 }
