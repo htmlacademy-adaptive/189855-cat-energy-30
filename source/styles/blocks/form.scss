@@ -154,8 +154,8 @@
     content: "";
     position: absolute;
     top: 14px;
-    left: -120px;
-    width: 100px;
+    left: calc(-100vw - 20px);
+    width: 100vw;
     height: 2px;
     background-color: $accent-color;
   }
@@ -164,8 +164,8 @@
     content: "";
     position: absolute;
     top: 14px;
-    right: -1020px;
-    width: 1000px;
+    right: calc(-100vw - 20px);
+    width: 100vw;
     height: 2px;
     background-color: $accent-color;
   }
@@ -263,8 +263,8 @@
     content: "";
     position: absolute;
     top: 14px;
-    left: -120px;
-    width: 100px;
+    left: calc(-100vw - 20px);
+    width: 100vw;
     height: 2px;
     background-color: $accent-color;
   }
@@ -273,8 +273,8 @@
     content: "";
     position: absolute;
     top: 14px;
-    right: -1020px;
-    width: 1000px;
+    right: calc(-100vw - 20px);
+    width: 100vw;
     height: 2px;
     background-color: $accent-color;
   }
@@ -319,8 +319,8 @@
     content: "";
     position: absolute;
     top: 14px;
-    left: -120px;
-    width: 100px;
+    left: calc(-100vw - 20px);
+    width: 100vw;
     height: 2px;
     background-color: $accent-color;
   }
@@ -329,8 +329,8 @@
     content: "";
     position: absolute;
     top: 14px;
-    right: -1020px;
-    width: 1000px;
+    right: calc(-100vw - 40px);
+    width: 100vw;
     height: 2px;
     background-color: $accent-color;
   }
@@ -442,12 +442,12 @@
 
     input {
       border: 1px solid $input-broder-color;
-      padding-top: 11px;
+      padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 20px;
 
       &:focus {
-        padding: 12px 20px 12px;
+        padding: 11px 20px 11px;
       }
     }
   }
@@ -509,14 +509,12 @@
 
     &::before {
       top: 20px;
-      left: -340px;
-      width: 300px;
+      left: calc(-100vw - 40px);
     }
 
     &::after {
       top: 20px;
-      right: -1040px;
-      width: 1000px;
+      right: calc(-100vw - 40px);
     }
   }
 
@@ -537,7 +535,7 @@
     padding: 11px 16px 10px 20px;
 
     &:focus {
-      padding: 12px 16px 12px 20px;
+      padding: 11px 16px 11px 20px;
     }
   }
 
@@ -558,13 +556,12 @@
 
     &::before {
       top: 20px;
-      left: -340px;
-      width: 300px;
+      left: calc(-100vw - 40px);
     }
 
     &::after {
       top: 20px;
-      right: -1040px;
+      right: calc(-100vw - 40px);
     }
   }
 
@@ -590,14 +587,12 @@
 
     &::before {
       top: 20px;
-      left: -340px;
-      width: 300px;
+      left: calc(-100vw - 40px);
     }
 
     &::after {
       top: 20px;
-      right: -1040px;
-      width: 1000px;
+      right: calc(-100vw - 40px);
     }
   }
 
@@ -694,7 +689,7 @@
       padding: 11px 20px 10px 20px;
 
       &:focus {
-        padding: 12px 21px 12px 20px;
+        padding: 11px 21px 11px 20px;
       }
     }
   }
@@ -726,18 +721,6 @@
   .form__contacts-title {
     grid-column: 1 / -1;
     margin-bottom: 76px;
-
-    &::before {
-      top: 20px;
-      left: -2040px;
-      width: 2000px;
-    }
-
-    &::after {
-      top: 20px;
-      right: -2040px;
-      width: 2000px;
-    }
   }
 
   .form__input-email {
@@ -756,18 +739,6 @@
 
   .form__comment-title {
     margin-bottom: 78px;
-
-    &::before {
-      top: 20px;
-      left: -2040px;
-      width: 2000px;
-    }
-
-    &::after {
-      top: 20px;
-      right: -2040px;
-      width: 2000px;
-    }
   }
 
   .form__comment-textarea {

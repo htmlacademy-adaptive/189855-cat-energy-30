@@ -17,6 +17,10 @@
   &--none {
     display: none;
   }
+
+  &--static {
+    position: static;
+  }
 }
 
 .header__toggle {
@@ -58,6 +62,10 @@
     &::after {
       transform: rotate(-45deg);
     }
+  }
+
+  &--none {
+    display: none;
   }
 }
 
