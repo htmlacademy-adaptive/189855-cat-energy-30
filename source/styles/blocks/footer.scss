@@ -40,23 +40,46 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
 
-  .footer__brend-logo {
+.footer__brend-logo {
+  path {
+    transition: all 0.5s ease;
+  }
+
+  &:hover {
     path {
+      fill: $accent-color;
       transition: all 0.5s ease;
     }
   }
 
-  &:hover {
-    .footer__brend-logo {
-      path {
-        fill: $accent-color;
-        transition: all 0.5s ease;
-      }
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__brend-logo-text {
+  &:hover + .footer__brend-logo {
+    path {
+      fill: $accent-color;
+      transition: all 0.5s ease;
     }
   }
 
   &:active {
+    opacity: 0.3;
+  }
+}
+
+.footer__brend:has(.footer__brend-logo-text:active) {
+  .footer__brend-logo {
+    opacity: 0.3;
+  }
+}
+
+.footer__brend:has(.footer__brend-logo:active) {
+  .footer__brend-logo-text {
     opacity: 0.3;
   }
 }
@@ -69,16 +92,17 @@
 
   .footer__wrap {
     @include wrapper-tablet();
-
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .footer__logo {
     margin-bottom: 0;
+    flex-shrink: 0;
   }
 
   .footer__brend {
+    flex-shrink: 0;
     width: 161px;
   }
 }

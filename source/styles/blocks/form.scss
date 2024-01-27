@@ -62,8 +62,10 @@
 
     &:focus {
       outline: 2px solid $input-focus-color;
-      border: none;
-      padding: 14px 15px 14px;
+
+      &:hover {
+        border-color: $input-focus-color;
+      }
     }
   }
 
@@ -120,6 +122,7 @@
   &:disabled {
     & + label {
       opacity: 0.3;
+      cursor: default;
     }
   }
 }
@@ -173,6 +176,10 @@
 
 .form__button {
   border: none;
+
+  &:focus {
+    background-color: $accent-color-hover;
+  }
 }
 
 .form__input-email:has(.form__email:focus) {
@@ -193,14 +200,16 @@
   border: 1px solid $input-broder-color;
   flex-grow: 1;
 
-  &:focus {
-    outline: 2px solid $input-focus-color;
-    border: none;
-    padding: 14px 15px 14px;
+  &:hover {
+    border-color: $light-gray;
   }
 
-  &:invalid {
-    border-color: $error-color;
+  &:focus {
+    outline: 2px solid $input-focus-color;
+
+    &:hover {
+      border-color: $input-focus-color;
+    }
   }
 }
 
@@ -220,13 +229,6 @@
     width: 20px;
     height: 20px;
     background-color: $basic-black;
-  }
-
-  &:hover {
-    .form__email,
-    .form__phone {
-      border-color: $light-gray;
-    }
   }
 }
 
@@ -297,10 +299,6 @@
     &:focus {
       outline: 2px solid $input-focus-color;
     }
-
-    &:invalid {
-      outline: 2px solid $error-color;
-    }
   }
 }
 
@@ -365,6 +363,13 @@
         border-color: $radio-button-hover-color;
       }
     }
+
+    &:focus {
+      &::before {
+        outline: none;
+        border-color: $basic-black;
+      }
+    }
   }
 
   &:checked + label {
@@ -383,6 +388,7 @@
   &:disabled {
     & + label {
       opacity: 0.3;
+      cursor: default;
     }
   }
 }
@@ -445,10 +451,6 @@
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 20px;
-
-      &:focus {
-        padding: 11px 20px 11px;
-      }
     }
   }
 
@@ -533,10 +535,6 @@
   .form__email,
   .form__phone {
     padding: 11px 16px 10px 20px;
-
-    &:focus {
-      padding: 11px 16px 11px 20px;
-    }
   }
 
   .form__contacts-data {
@@ -687,10 +685,6 @@
   .form__client-age {
     input {
       padding: 11px 20px 10px 20px;
-
-      &:focus {
-        padding: 11px 21px 11px 20px;
-      }
     }
   }
 
@@ -795,6 +789,6 @@
   }
 
   .form__button {
-    min-width: none;
+    min-width: 0;
   }
 }

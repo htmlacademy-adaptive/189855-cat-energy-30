@@ -21,9 +21,7 @@
   position: relative;
   padding-left: 80px;
   min-height: 60px;
-}
 
-.how-it-works__item--leaf {
   &::before {
     content: "";
     position: absolute;
@@ -31,6 +29,11 @@
     left: 0;
     width: 60px;
     height: 60px;
+  }
+}
+
+.how-it-works__item--leaf {
+  &::before {
     background: $accent-color url("../../images/icons/stack.svg#how-it-works_leaf") no-repeat center;
     background-size: 30px 32px;
   }
@@ -38,12 +41,6 @@
 
 .how-it-works__item--laundry {
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
     background: $accent-color url("../../images/icons/stack.svg#how-it-works_laundry") no-repeat center;
     background-size: 26px 29px;
   }
@@ -51,12 +48,6 @@
 
 .how-it-works__item--eat {
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
     background: $accent-color url("../../images/icons/stack.svg#how-it-works_eat") no-repeat center;
     background-size: 25px 30px;
   }
@@ -64,12 +55,6 @@
 
 .how-it-works__item--watch {
   &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 60px;
     background: $accent-color url("../../images/icons/stack.svg#how-it-works_watch") no-repeat center;
     background-size: 26px 31px;
   }
@@ -108,6 +93,11 @@
     min-height: 60px;
     font-size: 16px;
     line-height: 24px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
 
     &::after {
       position: absolute;
@@ -158,16 +148,6 @@
         top: -38px;
         right: -2px;
       }
-    }
-  }
-
-  .how-it-works__item--leaf,
-  .how-it-works__item--laundry,
-  .how-it-works__item--eat,
-  .how-it-works__item--watch {
-    &::before {
-      width: 80px;
-      height: 80px;
     }
   }
 }
