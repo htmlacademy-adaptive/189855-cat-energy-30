@@ -367,7 +367,7 @@
   }
 
   .catalog__item-wrap {
-    min-width: auto;
+    min-width: 0;
     grid-template-columns: 1fr;
     grid-template-rows: min-content auto;
     row-gap: 0;
