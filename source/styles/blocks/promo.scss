@@ -1,5 +1,5 @@
 .promo__wrap {
-  background-image: url("../../images/promo-mobile@1x.png");
+  background-image: image-set(url("../../images/promo-mobile@1x.webp") type("image/webp") 1x, url("../../images/promo-mobile@2x.webp") type("image/webp") 2x, url("../../images/promo-mobile@1x.png") type("image/png") 1x, url("../../images/promo-mobile@2x.png") type("image/png") 2x);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -34,7 +34,7 @@
 @media (min-width: $tablet-width) {
   .promo__wrap {
     position: relative;
-    background-image: url("../../images/promo-tablet@1x.png");
+    background-image: image-set(url("../../images/promo-tablet@1x.webp") type("image/webp") 1x, url("../../images/promo-tablet@2x.webp") type("image/webp") 2x, url("../../images/promo-tablet@1x.png") type("image/png") 1x, url("../../images/promo-tablet@2x.png") type("image/png") 2x);
   }
 
   .promo__container {
@@ -65,10 +65,10 @@
   .promo__wrap {
     padding: 0;
     margin: 0;
-    min-width: none;
+    min-width: 0;
 
     position: relative;
-    background-image: url("../../images/promo-desktop@1x.png");
+    background-image: image-set(url("../../images/promo-desktop@1x.webp") type("image/webp") 1x, url("../../images/promo-desktop@2x.webp") type("image/webp") 2x, url("../../images/promo-desktop@1x.png") type("image/png") 1x, url("../../images/promo-desktop@2x.png") type("image/png") 2x);
     background-size: 245px 288px;
     background-position: 0 0;
     margin-bottom: 0;

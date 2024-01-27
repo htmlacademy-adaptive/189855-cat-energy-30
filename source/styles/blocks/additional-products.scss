@@ -18,8 +18,8 @@
     content: "";
     position: absolute;
     top: 15px;
-    left: -120px;
-    width: 100px;
+    left: calc(-100vw - 20px);
+    width: 100vw;
     height: 2px;
     background-color: $accent-color;
   }
@@ -28,8 +28,8 @@
     content: "";
     position: absolute;
     top: 15px;
-    right: -1020px;
-    width: 1000px;
+    right: calc(-100vw - 20px);
+    width: 100vw;
     height: 2px;
     background-color: $accent-color;
   }
@@ -48,7 +48,7 @@
 }
 
 .additional-products__item-title {
-  margin-bottom: 13px;
+  margin-bottom: 11px;
   font-family: $font-first;
   font-size: 16px;
   line-height: 16px;
@@ -60,7 +60,7 @@
 .additional-products__table {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .additional-products__button {
@@ -74,7 +74,7 @@
 @media (min-width: $tablet-width) {
   .additional-products__wrap {
     @include wrapper-tablet();
-    padding-top: 70px;
+    padding-top: 67px;
     margin-bottom: 75px;
   }
 
@@ -87,16 +87,12 @@
 
     &::before {
       top: 23px;
-      left: -100px;
-      width: 100px;
-      height: 2px;
+      left: calc(-100vw - 2px);
     }
 
     &::after {
       top: 23px;
-      right: -1000px;
-      width: 1000px;
-      height: 2px;
+      right: calc(-100vw - 2px);
     }
   }
 
@@ -107,10 +103,14 @@
     padding-top: 26px;
     padding-left: 38px;
     padding-right: 38px;
-    margin-bottom: 28px;
+    padding-bottom: 27px;
+    margin-bottom: 0;
+    border-left: 1px solid $light-gray;
+    border-right: 1px solid $light-gray;
 
     &:last-child {
       padding-bottom: 28px;
+      margin-bottom: 70px;
     }
   }
 
@@ -140,9 +140,8 @@
 @media (min-width: $desktop-width) {
   .additional-products__wrap {
     @include wrapper-desktop();
-    display: grid;
-    grid-template-columns: 896px 245px;
-    grid-template-rows: min-content min-content;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 76px;
     margin-bottom: 87px;
@@ -151,22 +150,16 @@
   .additional-products__title {
     padding-left: 0;
     padding-right: 0;
-    display: inline;
-    grid-column: 1 / -1;
+    display: inline-block;
 
     &::before {
       top: 23px;
-      left: -1040px;
-      width: 1000px;
-      height: 2px;
+      left: calc(-100vw - 40px);
     }
 
     &::after {
       top: 23px;
-      right: 0;
-      left: 378px;
-      width: 2000px;
-      height: 2px;
+      right: calc(-100vw - 40px);
     }
   }
 
@@ -184,13 +177,16 @@
     display: grid;
     grid-template-columns: min-content 286px 244px;
     justify-content: right;
-    align-items: baseline;
+    align-items: center;
     column-gap: 40px;
     row-gap: 0;
     padding-top: 15px;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 17px;
+    padding-bottom: 16px;
+    margin-bottom: 0;
+    border-left: none;
+    border-right: none;
 
     &:last-child {
       margin-bottom: 0;

@@ -11,7 +11,7 @@
 .offer__item {
   position: relative;
   background-color: $basic-gray;
-  padding: 30px 20px 18px 20px;
+  padding: 30px 20px 17px 20px;
 
   &::after {
     content: "";
@@ -65,12 +65,13 @@
 }
 
 .offer__description {
-  padding-bottom: 23px;
-  margin-bottom: 15px;
+  padding-bottom: 21px;
+  margin-bottom: 21px;
   border-bottom: 1px solid $border-offer-color;
 }
 
 .offer__link {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: start;
@@ -79,33 +80,33 @@
   font-family: $font-first;
   font-size: 16px;
   line-height: 16px;
+  padding-right: 47px;
   text-transform: uppercase;
   text-decoration: none;
 
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 0;
+    width: 32px;
+    height: 12px;
+    background-image: url("../../images/icons/stack.svg#arrow");
+    background-repeat: no-repeat;
+    background-position: -8px;
+    overflow-x: hidden;
+    transition: all 0.5s ease;
+  }
+
   &:hover {
-    .offer__link-arrow {
-      img {
-        left: -3px;
-      }
+    &::after {
+      background-position: 0;
     }
   }
 
   &:active {
     opacity: 0.3;
-  }
-}
-
-.offer__link-arrow {
-  display: flex;
-  align-items: center;
-  width: 32px;
-  height: 10px;
-  overflow-x: hidden;
-
-  img {
-    position: relative;
-    left: -8px;
-    transition: all 0.6s ease;
   }
 }
 
@@ -119,7 +120,7 @@
   }
 
   .offer__item {
-    padding: 77px 316px 53px 52px;
+    padding: 77px 316px 57px 52px;
 
     &::after {
       top: 92px;
@@ -159,16 +160,20 @@
 
   .offer__description {
     padding-bottom: 0;
-    margin-bottom: 48px;
+    margin-bottom: 51px;
     border-bottom: none;
     font-size: 16px;
     line-height: 24px;
   }
 
   .offer__link {
-    gap: 25px;
     font-size: 20px;
     line-height: 30px;
+    padding-right: 57px;
+
+    &::after {
+      top: 9px;
+    }
   }
 }
 
@@ -184,7 +189,7 @@
 
   .offer__item {
     width: 570px;
-    padding: 77px 61px 55px 52px;
+    padding: 77px 61px 58px 52px;
 
     &::after {
       top: 47px;
@@ -218,6 +223,6 @@
   }
 
   .offer__description {
-    margin-bottom: 23px;
+    margin-bottom: 28px;
   }
 }
