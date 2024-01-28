@@ -32,9 +32,10 @@
   height: 362px;
 
   iframe {
-    display: block;
+    position: relative;
     width: 100%;
     height: 362px;
+    z-index: 2;
   }
 
   img {
@@ -42,8 +43,12 @@
     top: 50%;
     transform: translate(-50%, -50%);
     left: 50%;
-    z-index: -1;
+    // z-index: -1;
   }
+}
+
+.contacts__map-show--close {
+  display: none;
 }
 
 .contacts--inner-page {
@@ -132,4 +137,3 @@
     text-align: left;
   }
 }
-

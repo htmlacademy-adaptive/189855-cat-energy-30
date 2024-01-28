@@ -76,6 +76,14 @@
   }
 }
 
+
+.form__client-weight,
+.form__client-age {
+  input[type="number"] {
+    appearance: textfield;
+  }
+}
+
 .form__choice-program {
   padding-top: 22px;
   padding-bottom: 18px;
@@ -327,7 +335,7 @@
     content: "";
     position: absolute;
     top: 14px;
-    right: calc(-100vw - 40px);
+    right: calc(-100vw - 20px);
     width: 100vw;
     height: 2px;
     background-color: $accent-color;
@@ -443,7 +451,7 @@
   .form__client-weight,
   .form__client-age {
     &:not(:last-child) {
-      margin-bottom: 19px;
+      margin-bottom: 20px;
     }
 
     input {
@@ -710,11 +718,12 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 80px;
+    row-gap: 40px;
   }
 
   .form__contacts-title {
     grid-column: 1 / -1;
-    margin-bottom: 76px;
+    margin-bottom: 74px;
   }
 
   .form__input-email {
@@ -776,7 +785,9 @@
   .form__additionally-checkboxes {
     display: flex;
     justify-content: flex-start;
-    gap: 0;
+    flex-wrap: wrap;
+    column-gap: 0;
+    row-gap: 20px;
   }
 
   .form__button-wrap {
