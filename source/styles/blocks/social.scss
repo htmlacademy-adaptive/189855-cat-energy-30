@@ -14,9 +14,9 @@
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 15px;
-  width: 132px;
+  width: 130px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .social__item {
@@ -39,13 +39,15 @@
 
 @media (min-width: $tablet-width) {
   .social {
+    position: relative;
+    left: 16px;
     border-top: none;
     border-bottom: none;
     margin-bottom: 0;
   }
 
   .social__list {
-    width: 132px;
+    width: 125px;
     padding-top: 0;
     padding-bottom: 0;
   }
