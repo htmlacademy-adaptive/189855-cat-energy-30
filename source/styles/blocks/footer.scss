@@ -43,6 +43,9 @@
 }
 
 .footer__brand-logo {
+  display: flex;
+  align-items: center;
+
   path {
     transition: all 0.5s ease;
   }
@@ -60,6 +63,9 @@
 }
 
 .footer__brand-logo-text {
+  display: flex;
+  align-items: center;
+
   &:hover + .footer__brand-logo {
     path {
       fill: $accent-color;
